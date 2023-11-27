@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <title>Basic Snake HTML Game</title>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      border: 1px solid white;
+    }
+  </style>
 </head>
 <body>
-    <div class="container noselect">
-            <div id="author">
-                <h1>Snake Game</h1>
-            </div>
-        <div id="canvas"></div>
-            <div id="ui">
-                <h2>SCORE</h2>
-                <br>
-                <span id="score">00</span>
-            </div>
-        <button id="replay">
-            <i class="fas fa-play"></i>
-            RESTART
-        </button>
-        </div>
-    </div>
+  <canvas width="400" height="400" id="game"></canvas>
+  <script src="script.js"></script>
 </body>
 </html>
